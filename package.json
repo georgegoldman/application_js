@@ -9,6 +9,7 @@
   "author": "lb",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "cassandra-driver": "^4.5.1",
     "cookie-parser": "^1.4.5",
     "core-js": "^3.6.5",

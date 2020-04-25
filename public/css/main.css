@@ -1,0 +1,28 @@
+#banner,
+#content-box,
+#work-box,
+#sud-work-box,
+#sub-work-box2 {
+    background-color: whitesmoke;
+}
+
+#banner {
+    height: 3in;
+}
+
+#content-box {
+    height: 2in;
+}
+
+#work-box,
+#work-box2 {
+    height: 5in;
+}
+
+#sud-work-box {
+    height: 2.5in;
+}
+
+#sub-work-box2 {
+    height: 2.5in;
+}
