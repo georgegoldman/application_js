@@ -18,12 +18,4 @@ app.get('/', function (req, res) {
         layout: null
     });
 });
-app.get('/login_home', function (req, res) {
-    res.render('login');
-})
-app.post('/process-contact', function (req, res) {
-    console.info('receive contact info ' + req.query.email + " & " + req.query.password);
-    res.send('receive contact info ' + req.body.email + " & " + req.body.password);
-});
-
 app.listen(3000);
