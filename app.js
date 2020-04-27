@@ -15,7 +15,7 @@ app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
 
 app.get('/', function (req, res) {
     res.render('home', {
-        layout: null
+        layout: null,
     })
 })
 app.listen(PORT);
