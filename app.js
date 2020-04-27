@@ -1,5 +1,6 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.engine('.hbs', exphbs({
@@ -17,4 +18,4 @@ app.get('/', function (req, res) {
         layout: null
     })
 })
-app.listen(5000);
+app.listen(PORT);
