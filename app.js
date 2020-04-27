@@ -16,6 +16,6 @@ app.use(express.static(__dirname + '/node_modules/@fortawesome/fontawesome-free/
 app.get('/', function (req, res) {
     res.render('home', {
         layout: null
-    });
-});
+    })
+})
 app.listen(3000);
