@@ -11,11 +11,10 @@ app.use(express.urlencoded());
 app.use(express.static(__dirname + '/public'))
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
-app.use(express.static(__dirname + '/node_modules/@fortawesome/fontawesome-free/css'));
 
 app.get('/', function (req, res) {
     res.render('home', {
         layout: null
     })
 })
-app.listen(3000);
+app.listen(5000);
