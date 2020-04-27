@@ -2,35 +2,28 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 
 const app = express();
-const hbs = exphbs.create({
-    'helpers': {
-        foo: () => 'foo!',
-        bar: () => 'bar!',
-    },
-    defaultLayout: 'header',
-});
-
-// process.env.NODE_ENV === "production";
-var fortunes = [
-    "Conquer your fears or they will conquer you.",
-    "Rivers need springs.",
-    "Do not fear what you don't know.",
-    "You will have a pleasant surprise.",
-    "Whenever possible, keep it simple.",
-];
-
 app.engine('.hbs', exphbs({
     extname: '.hbs'
 }));
 app.set('view engine', '.hbs');
 
+app.use(express.urlencoded());
 app.use(express.static(__dirname + '/public'))
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
+app.use(express.static(__dirname + '/node_modules/@fortawesome/fontawesome-free/css'));
 
 app.get('/', function (req, res) {
-    var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
     res.render('home', {
-        'fortunes': randomFortune
+        layout: null
     });
+});
+app.get('/login_home', function (req, res) {
+    res.render('login');
 })
+app.post('/process-contact', function (req, res) {
+    console.info('receive contact info ' + req.query.email + " & " + req.query.password);
+    res.send('receive contact info ' + req.body.email + " & " + req.body.password);
+});
 
 app.listen(3000);

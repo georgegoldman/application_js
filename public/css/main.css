@@ -26,3 +26,16 @@
 #sub-work-box2 {
     height: 2.5in;
 }
+
+#advert-box {
+    height: 100vh;
+    background-color: rgb(151, 223, 151);
+}
+
+#advert-content-box {
+    color: white;
+    font-size: x-large;
+    position: relative;
+    top: 2.6in;
+    left: 2.6in;
+}
