@@ -39,3 +39,7 @@
     top: 2.6in;
     left: 2.6in;
 }
+
+#signin {
+    display: none;
+}

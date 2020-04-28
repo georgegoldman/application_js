@@ -27,28 +27,12 @@
                 <div id="auth">
                     <div class="row">
                         <div class="col-xlg-12 col-lg-12 col-sm-12 col-12">
-                            <form action="">
-                                <fieldset class="form-group">
-                                    <legend class="form-group">login</legend>
-                                    <div class="input-group col-lg-12 col-xlg-12 col-sm-12">
-                                        <input type="text" name="" id="" placeholder="Email or Tel"
-                                            class="form-control form-group">
-                                        <input type="password" name="" placeholder="Pasword" id=""
-                                            class="ml-lg-3 ml-xlg-3 ml-sm-3 ml-3 form-control form-group">
-                                    </div>
-                                    <div class="col-lg-12 col-xlg-12 col-sm-12 col-12">
-                                        <div class="row">
-                                            <div class="col-lg-3 col-xlg-3 col-sm-12 col-12"></div>
-                                            <div class="col-lg-3 col-xlg-3 col-sm-12 col-12"></div>
-                                            <div class="col-lg-4 col-xlg-4 col-sm-12 col-12">
-                                                <div id="">
-                                                    <a href="" class="text-secondary">Forgot password</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </form>
+                            <div id="signin">
+                                {{> signin}}
+                            </div>
+                            <div id="signup">
+                                {{> signup}}
+                            </div>
                         </div>
                         <div class="col-lg-2 col-xlg-2 col-sm-2 col-12"></div>
                         <div class="col-lg-8 col-xlg-8 col-sm-8 col-8 mt-xlg-5 mt-sm-8 mt-8 mt-lg-5">
@@ -65,6 +49,6 @@
         </div>
     </div>
     <nav class="navbar fixed-bottom navbar-light bg-light">
-        <a class="text-secondaryher" href="#">base</a>
+        <a class="text-secondary" href="#">base</a>
     </nav>
 </body>

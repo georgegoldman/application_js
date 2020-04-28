@@ -1,5 +1,20 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
+// const {
+//     Pool,
+//     Client
+// } = require('pg')
+// const connectionString = 'postgresql://postgres:password@localhost:5432/cropbank'
+
+// const client = new Client({
+//     connectionString: connectionString,
+// })
+// client.connect()
+// client.query('SELECT * from comapny', (err, res) => {
+//     console.log(err, res);
+//     client.end
+// })
+
 const PORT = process.env.PORT || 5000;
 
 const app = express();
