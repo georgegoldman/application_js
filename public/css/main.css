@@ -35,7 +35,24 @@
 #advert-content-box {
     color: white;
     font-size: x-large;
-    position: relative;
-    top: 2.6in;
-    left: 2.6in;
+}
+
+@media(min-width: 1224px) {
+    #advert-content-box {
+        position: relative;
+        top: 2.6in;
+        left: 2.6in;
+    }
+}
+
+@media(max-width: 320px) {
+    #advert-content-box {
+        position: absolute;
+        top: .6in;
+        left: 1.4cm;
+    }
+
+    #advert-box {
+        height: 3in;
+    }
 }

@@ -1,6 +1,7 @@
 var Sequalize = require('sequelize')
 var bcrypt = require('bcrypt');
 // create a Sequalize instance with a local databsae information
+// var sequelize = new Sequalize('postgres://postgres:password@localhost:5432/cropbank')
 var sequelize = new Sequalize(process.env.DATABASE_URL)
 
 var User = sequelize.define('users', {

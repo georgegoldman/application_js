@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{{> links}}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{> links}}
+</head>
 
 <body>
+
     <div class="col-md-12 mt-md-2"></div>
     <div class="col-lg-12 col-12 col-sm-12 col-xlg-12">
         <div class="row">
@@ -25,7 +31,7 @@
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                         aria-labelledby="v-pills-home-tab">
-                        home</div>
+                        {{{body}}}</div>
                     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                         aria-labelledby="v-pills-profile-tab">
                         profile</div>
