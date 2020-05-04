@@ -1,0 +1,16 @@
+{{> links}}
+<div class="col-md-6">
+    <form action="" method="POST" enctype="multipart/form-data" role="form">
+        <div class="form-row col-md-12 mt-md-5">
+            <div>
+                <input type="hidden" name="_csrf_token" value="{{csrfToken}}">
+            </div>
+            <div class="input-group col-md-3">
+                <input type="file" name="" id="" class="form-control">
+            </div>
+            <div class="input-group col-lg-2">
+                <input type="submit" value="submit" class="form-control btn btn-secondary">
+            </div>
+        </div>
+    </form>
+</div>
