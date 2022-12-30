@@ -40,6 +40,6 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "install-peers": "^1.0.3",
-    "mocha": "^7.1.1"
+    "mocha": "^10.2.0"
   }
 }
